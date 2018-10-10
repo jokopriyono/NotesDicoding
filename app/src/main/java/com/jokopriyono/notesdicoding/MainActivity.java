@@ -10,6 +10,10 @@ import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.widget.ProgressBar;
 
+import com.jokopriyono.notesdicoding.adapter.NoteAdapter;
+import com.jokopriyono.notesdicoding.data.Note;
+import com.jokopriyono.notesdicoding.data.NoteHelper;
+
 import java.util.ArrayList;
 import java.util.List;
 

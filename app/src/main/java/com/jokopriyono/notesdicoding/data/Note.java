@@ -1,4 +1,4 @@
-package com.jokopriyono.notesdicoding;
+package com.jokopriyono.notesdicoding.data;
 
 import java.io.Serializable;
 

@@ -1,4 +1,4 @@
-package com.jokopriyono.notesdicoding;
+package com.jokopriyono.notesdicoding.adapter;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -10,6 +10,10 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
+import com.jokopriyono.notesdicoding.FormAddUpdateActivity;
+import com.jokopriyono.notesdicoding.data.Note;
+import com.jokopriyono.notesdicoding.R;
+
 import java.util.List;
 
 public class NoteAdapter extends RecyclerView.Adapter<NoteAdapter.NoteViewholder>{
@@ -20,7 +24,7 @@ public class NoteAdapter extends RecyclerView.Adapter<NoteAdapter.NoteViewholder
         this.activity = activity;
     }
 
-    public List<Note> getListNotes() {
+    private List<Note> getListNotes() {
         return listNotes;
     }
 
@@ -56,11 +60,10 @@ public class NoteAdapter extends RecyclerView.Adapter<NoteAdapter.NoteViewholder
         return getListNotes().size();
     }
 
-    public class NoteViewholder extends RecyclerView.ViewHolder{
+    class NoteViewholder extends RecyclerView.ViewHolder{
         TextView tvTitle, tvDescription, tvDate;
         CardView cvNote;
-
-        public NoteViewholder(View itemView) {
+        NoteViewholder(View itemView) {
             super(itemView);
             tvTitle = itemView.findViewById(R.id.tv_item_title);
             tvDescription = itemView.findViewById(R.id.tv_item_description);

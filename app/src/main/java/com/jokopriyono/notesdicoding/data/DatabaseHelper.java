@@ -1,11 +1,11 @@
-package com.jokopriyono.notesdicoding;
+package com.jokopriyono.notesdicoding.data;
 
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
 public class DatabaseHelper extends SQLiteOpenHelper {
-    public static String DATABASE_NAME = "dbnoteapp";
+    private static String DATABASE_NAME = "dbnoteapp";
     private static final int DATABASE_VERSION = 1;
     private static final String SQL_CREATE_TABLE_NOTE = String.format("CREATE TABLE %s"
                     + " (%s INTEGER PRIMARY KEY AUTOINCREMENT," +
@@ -19,7 +19,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
             DatabaseContract.NoteColumns.DATE
     );
 
-    public DatabaseHelper(Context context){
+    DatabaseHelper(Context context){
         super(context, DATABASE_NAME, null, DATABASE_VERSION);
     }
     @Override

@@ -1,4 +1,4 @@
-package com.jokopriyono.notesdicoding;
+package com.jokopriyono.notesdicoding.data;
 
 import android.content.ContentValues;
 import android.content.Context;
@@ -10,10 +10,10 @@ import java.util.ArrayList;
 import java.util.List;
 
 import static android.provider.BaseColumns._ID;
-import static com.jokopriyono.notesdicoding.DatabaseContract.NoteColumns.DATE;
-import static com.jokopriyono.notesdicoding.DatabaseContract.NoteColumns.DESCRIPTION;
-import static com.jokopriyono.notesdicoding.DatabaseContract.NoteColumns.TITLE;
-import static com.jokopriyono.notesdicoding.DatabaseContract.TABLE_NOTE;
+import static com.jokopriyono.notesdicoding.data.DatabaseContract.NoteColumns.DATE;
+import static com.jokopriyono.notesdicoding.data.DatabaseContract.NoteColumns.DESCRIPTION;
+import static com.jokopriyono.notesdicoding.data.DatabaseContract.NoteColumns.TITLE;
+import static com.jokopriyono.notesdicoding.data.DatabaseContract.TABLE_NOTE;
 
 public class NoteHelper {
     private static String DATABASE_TABLE = TABLE_NOTE;
