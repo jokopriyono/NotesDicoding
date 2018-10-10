@@ -50,7 +50,7 @@ public class FormAddUpdateActivity extends AppCompatActivity implements View.OnC
         noteHelper = new NoteHelper(this);
         noteHelper.open();
 
-        note = getIntent().getParcelableExtra(EXTRA_NOTE);
+        note = (Note) getIntent().getSerializableExtra(EXTRA_NOTE);
 
         String actionBarTitle;
         String btnTitle;
